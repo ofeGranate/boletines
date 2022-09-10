@@ -39,6 +39,30 @@ a {
   background-color: #fff;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   border-radius: 4px;
+  /* Marcamos esta clase content para hacerlo contenedor-posicionado */
+  /* Será la referencia de la clase close (la equis de cierre X) */
+  position: relative;
+}
+
+.actions {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+.close {
+  height: 40px;
+  width: 40px;
+  background: #642B73;
+  color: white;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-weight: 300px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .paragraph {
