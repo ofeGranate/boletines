@@ -16,6 +16,10 @@ a {
   color: #d500f9;
 }
 
+a:hover {
+  opacity: 0.8;
+}
+
 .title {
   text-transform: uppercase;
 }
