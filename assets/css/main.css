@@ -22,6 +22,7 @@ a:hover {
 
 .title {
   text-transform: uppercase;
+  text-align: center;
 }
 
 /* degradado del container https://uigradients.com/#Sunset */
@@ -46,6 +47,7 @@ a:hover {
   /* Marcamos esta clase content para hacerlo contenedor-posicionado */
   /* Será la referencia de la clase close (la equis de cierre X) */
   position: relative;
+  padding: 1.8em;
 }
 
 .actions {
@@ -101,8 +103,21 @@ td {
   /* border-bottom-style: solid;
   border-width: 2px;
   border-color: #C6426E; */
-  border-bottom: solid 2px #C6426E
+  border-bottom: solid 2px #C6426E;
   padding-bottom: 1em;
+  font-size: 2em;
+}
+
+.address {
+  font-weight: bold;
+  color:#642B73;
+  font-size: 1.2em;
+}
+
+.main-images {
+  float: left;
+  margin-right: 1em;
+  height: 250px;
 }
 
 .position {
@@ -110,4 +125,26 @@ td {
   color: white;
   padding: 10px;
   border-radius: 4px;
+  margin-right: 0.5em;
+}
+
+.animated{
+  animation: fadeInDown 2s;
+  -webkit-animation: fadeInDown 2s;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
 }
